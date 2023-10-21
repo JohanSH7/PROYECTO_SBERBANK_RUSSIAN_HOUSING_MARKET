@@ -6,4 +6,4 @@
 ## Dataset
 https://www.kaggle.com/competitions/amex-default-prediction/data
 
-## Informacion notebook
+## Información notebook
