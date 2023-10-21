@@ -3,6 +3,7 @@
 
 + **Integrante:** Johan Sebastian Henao Cañas | C.C. 1000085432 | Ingenieria de Sistemas
 
-  
 ## Dataset
 https://www.kaggle.com/competitions/amex-default-prediction/data
+
+## Informacion notebook
