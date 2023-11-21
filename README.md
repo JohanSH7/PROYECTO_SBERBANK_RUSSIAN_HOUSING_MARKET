@@ -6,26 +6,24 @@
 ## Dataset
 Los datos del proyecto actual provienen de una competición de Kaggle llamada [**Mechanisms of Action (MoA) Prediction**](https://www.kaggle.com/competitions/lish-moa/data). Se puede acceder a los datos ejecutando los siguientes comandos desde cualquier notebook:
 ```
-# Instalar la librería necesaria
-!pip install gdown
+# Enlaces directos a los archivos en Google Drive
+urls = {
+    'train_targets_scored': 'https://drive.google.com/uc?id=12majHautYikmbSBlN1qNyzlkp076rFc2',
+    'train_features': 'https://drive.google.com/uc?id=1XKVyJT3LRgYXozASXo6WT0WNPhktfvaa',
+    'test_features': 'https://drive.google.com/uc?id=1R2tc7jX5Vrt74XF9Gpeo6UAjrO06DXmn'
+}
 
-# Definir el enlace compartido de Google Drive (carpeta)
-enlace_carpeta = "https://drive.google.com/drive/folders/1Xgn2u3v0Iun0kdn5NSeuE_5SlaxG4FTO?usp=sharing"
+# Descargar y leer cada archivo
+dfs = {}
+for name, url in urls.items():
+    output = f"{name}.csv"
+    gdown.download(url, output, quiet=False)
+    dfs[name] = pd.read_csv(output)
 
-# Listar los archivos dentro de la carpeta
-archivos_en_carpeta = [
-    "train_drug.csv",
-    "train_features.csv",
-    "train_targets_scored.csv",
-]
-# Descargar cada archivo de la carpeta
-import gdown
-for archivo in archivos_en_carpeta:
-    # Construir el enlace de descarga directa
-    enlace_descarga = f"{enlace_carpeta}/{archivo}"
-
-    # Descargar el archivo
-    gdown.download(enlace_descarga, output=archivo, quiet=False)
+# Ahora dfs contiene los DataFrames correspondientes a cada archivo
+Y = dfs['train_targets_scored']
+X = dfs['train_features']
+test = dfs['test_features']
 ```
 
 ## Información notebook
