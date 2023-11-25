@@ -8,9 +8,8 @@ Los datos del proyecto actual provienen de una competición de Kaggle llamada [*
 ```
 # Enlaces directos a los archivos en Google Drive
 urls = {
-    'train_targets_scored': 'https://drive.google.com/uc?id=12majHautYikmbSBlN1qNyzlkp076rFc2',
-    'train_features': 'https://drive.google.com/uc?id=1XKVyJT3LRgYXozASXo6WT0WNPhktfvaa',
-    'test_features': 'https://drive.google.com/uc?id=1R2tc7jX5Vrt74XF9Gpeo6UAjrO06DXmn'
+    'train': 'https://drive.google.com/uc?id=1dEP20pVQrKczTk1fbUk4g6WhUe4SOg00',
+    'test': 'https://drive.google.com/uc?id=17uN_IpWH_L5Ou-cGguBoe-k8bqU9qCy6',
 }
 
 # Descargar y leer cada archivo
@@ -20,10 +19,9 @@ for name, url in urls.items():
     gdown.download(url, output, quiet=False)
     dfs[name] = pd.read_csv(output)
 
-# Ahora dfs contiene los DataFrames correspondientes a cada archivo
-Y = dfs['train_targets_scored']
-X = dfs['train_features']
-test = dfs['test_features']
+# Ahora las siguientes variables contienen los DataFrames correspondientes a cada archivo
+X = dfs['train']
+Test = dfs['test']
 ```
 
 ## Información notebook
