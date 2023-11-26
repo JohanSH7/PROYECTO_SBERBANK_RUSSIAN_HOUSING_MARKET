@@ -1,10 +1,10 @@
-# Mechanisms of Action (MoA) Prediction
-+ **Objetivo:** Desarrollar y optimizar modelos predictivos y no supervisados para la clasificación de las respuestas a los mecanismos de acción (MoA) de diferentes compuestos en muestras biológicas.
+# SBERBANK RUSSIAN HOUSING MARKET
++ **Objetivo:** El objetivo principal de este proyecto es realizar un análisis exhaustivo del mercado inmobiliario en una ubicación específica, empleando un conjunto de datos detallado que incluye transacciones de propiedades y datos macroeconómicos asociados. 
 
 + **Integrante:** Johan Sebastian Henao Cañas | C.C. 1000085432 | Ingenieria de Sistemas.
 
 ## Dataset
-Los datos del proyecto actual provienen de una competición de Kaggle llamada [**Mechanisms of Action (MoA) Prediction**](https://www.kaggle.com/competitions/lish-moa/data). Se puede acceder a los datos ejecutando los siguientes comandos desde cualquier notebook:
+Los datos del proyecto actual provienen de una competición de Kaggle llamada [**SBERBANK RUSSIAN HOUSING MARKET**]([https://www.kaggle.com/competitions/lish-moa/data](https://www.kaggle.com/competitions/sberbank-russian-housing-market/data)). Se puede acceder a los datos ejecutando los siguientes comandos desde cualquier notebook:
 ```
 # Enlaces directos a los archivos en Google Drive
 urls = {
@@ -24,4 +24,5 @@ X = dfs['train']
 Test = dfs['test']
 ```
 
-## Información notebook
+## Video
+
