@@ -4,7 +4,7 @@
 + **Integrante:** Johan Sebastian Henao Cañas | C.C. 1000085432 | Ingenieria de Sistemas.
 
 ## Dataset
-Los datos del proyecto actual provienen de una competición de Kaggle llamada [**SBERBANK RUSSIAN HOUSING MARKET**]((https://www.kaggle.com/competitions/sberbank-russian-housing-market/data)). Se puede acceder a los datos ejecutando los siguientes comandos desde cualquier notebook:
+Los datos del proyecto actual provienen de una competición de Kaggle llamada **SBERBANK RUSSIAN HOUSING MARKET** [Enlace a la competición en Kaggle](https://www.kaggle.com/competitions/sberbank-russian-housing-market/data). Se puede acceder a los datos ejecutando los siguientes comandos desde cualquier notebook:
 ```
 # Enlaces directos a los archivos en Google Drive
 urls = {
@@ -25,4 +25,4 @@ Test = dfs['test']
 ```
 
 ## Video
-[**PROYECTO_FINAL**]([https://youtu.be/CE2UpbJZuEg])
+**PROYECTO_FINAL** [Enlace al video del proyecto](https://youtu.be/CE2UpbJZuEg)
